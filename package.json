@@ -1,0 +1,19 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "Informative Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarreiraTom/PersonalWebsite.git"
+  },
+  "author": "João Tomás Barreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarreiraTom/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/BarreiraTom/PersonalWebsite#readme"
+}
