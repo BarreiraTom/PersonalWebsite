@@ -1,0 +1,23 @@
+{ 
+    "websiteOwner": "Tomás Barreira",
+    "websiteName": "HELLO",
+    "navigation": [{
+        "id": "menu1",
+        "name": "etc"
+    },{
+        "id": "menu2",
+        "name": "var"
+    },{
+        "id": "menu3",
+        "name": "share",
+        "navigation": [
+            {
+                "id": "submenu1",
+                "name": "www"
+            },{
+                "id": "submenu2",
+                "name": "html"
+            }
+        ]
+    }]
+}

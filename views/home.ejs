@@ -10,6 +10,13 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
     </head>
     <body>
-        teste
+        teste<br>
+        <%- JSON.stringify(jsonData) %>
+        <br><br>
+        
+        <script>
+            var ret= JSON.parse('<%- JSON.stringify(jsonData) %>')
+            console.log(ret)
+        </script>
     </body>
 </html>
