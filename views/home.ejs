@@ -8,8 +8,33 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+        <style>
+            .dropdown .menushow{
+                display:none;
+            }
+            .dropdown:hover .menushow{
+                display:block;
+            }
+        </style>
     </head>
     <body>
+        <header>
+            <% jsonData.navigation.forEach(element => { %>
+                <% if (element.navigation!= undefined) { %>
+                    <div class="dropdown" style="display: inline-block; vertical-align: top; border-left: 2px solid;">
+                        <a href="<%- element.id %> "><%- element.name %> </aclass="dropdown">
+                        <div class="menushow">
+                            <% element.navigation.forEach(subelement => { %>
+                                <a href="<%- subelement.id %> "><%- subelement.name %> </a>
+                            <% }) %>
+                        </div>
+                    </div>
+                <% }else{ %>
+                    <a href="<%- element.id %>" style="display: inline-block; vertical-align: top; border-left: 2px solid;"><%- element.name %> </a>
+                <% } %> 
+            <% }) %> 
+        </header>
+        <br><br><br><br>
         teste<br>
         <%- JSON.stringify(jsonData) %>
         <br><br>
