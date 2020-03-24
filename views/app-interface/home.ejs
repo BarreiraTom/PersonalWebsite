@@ -1,0 +1,11 @@
+<%- include('../includes/head.ejs') %>
+    <br><br><br><br>
+    teste<br>
+    <%- JSON.stringify(jsonData) %>
+    <br><br>
+    
+    <script>
+        var ret= JSON.parse('<%- JSON.stringify(jsonData) %>')
+        console.log(ret)
+    </script>
+<%- include('../includes/footer.ejs') %>

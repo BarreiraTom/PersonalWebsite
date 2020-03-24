@@ -10,16 +10,26 @@
         "id": "cvNav",
         "name": "Curriculum Vitae",
         "class": "",
-        "href": "/navigation/",
+        "href": "/CurVit",
         "navigation": [{
                 "id": "submenu1",
                 "name": "www"
             },{
                 "id": "submenu2",
-                "name": "html"
+                "name": "html",
+                "href": "/goodbye"
             }]
     },{
         "id": "menu3",
-        "name": "var"
+        "name": "Projetos",
+        "href": "/projects"
+    },{
+        "id": "menu4",
+        "name": "Testes",
+        "href": "/tests",
+        "navigation":[{
+            "id":"TESTE123",
+            "name":"O tiago é gay"
+        }]
     }]
 }
