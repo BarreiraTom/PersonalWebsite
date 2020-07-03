@@ -1,6 +1,110 @@
-.dropdown .menushow{
+/* .dropdown .menushow{
     display:none;
 }
 .dropdown:hover .menushow{
     display:block;
+}
+
+.test{
+    background-color: red;
+} */
+
+:root{
+    /* Colors */
+    --white-color: #EEE;
+    --black-color: #222;
+
+    /* Default Sizes */
+    --general-size: 50%;
+    --normal-size: 15rem;
+    --normal-margin: .5rem;
+    --h1Text-size: 100px;
+    --h2Text-size: 30px;
+    --h3Text-size: 20px;
+}
+
+body, #root, section{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.white-text{
+    color: var(--white-color);
+}
+
+.black-text{
+    color: var(--black-color);
+}
+
+.logo{
+    width: var(--normal-size);
+    height: var(--normal-size);
+}
+
+h1{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 800;
+    font-size: var(--h1Text-size);
+    margin: var(--normal-margin);
+}
+
+h2{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 400;
+    font-size: var(--h2Text-size);
+    margin: var(--normal-margin);
+}
+
+h3{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 300;
+    font-size: var(--h3Text-size);
+    margin: var(--normal-margin);
+}
+
+/* Pages Css */
+
+.mainCont-out{
+    min-width: calc(var(--normal-size) + 60%);
+    margin: 0;
+    padding: 0;
+    min-height: calc(var(--normal-size) + var(--h3Text-size));
+}
+
+.mainCont-in{
+    min-width: calc(var(--normal-size) + 60%);
+    margin: 0;
+    padding: 0;
+    min-height: var(--normal-size);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logoCont{
+    width: var(--normal-size);
+    height: var(--normal-size);
+    padding: var(--normal-margin);
+}
+.textCont{
+    vertical-align: middle;
+}
+
+.flex-grow{
+    flex-grow: 1;
 }

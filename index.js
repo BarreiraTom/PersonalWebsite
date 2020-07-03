@@ -6,12 +6,12 @@ const app= express();
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'resources')));
 
-let jsonHome = fs.readFileSync('resources/json/home.json');
+let jsonHome = JSON.parse(fs.readFileSync('resources/json/main.json'));
 
 app.get("/", (req,res) => {
     res.render('app-interface/home', {
-        pageTitle: 'Home',
-        jsonData: JSON.parse(jsonHome)
+        pageTitle: `${jsonHome.websiteOwner} - ${jsonHome.websiteTitle}`,
+        jsonData: jsonHome
     });
 });
 

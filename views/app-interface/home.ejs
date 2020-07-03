@@ -1,11 +1,25 @@
 <%- include('../includes/head.ejs') %>
-    <br><br><br><br>
-    teste<br>
-    <%- JSON.stringify(jsonData) %>
-    <br><br>
-    
-    <script>
-        var ret= JSON.parse('<%- JSON.stringify(jsonData) %>')
-        console.log(ret)
-    </script>
+<section id="Main">
+    <div class="center mainCont-out">
+        <div class="mainCont-in">
+            <div class="logoCont inline">
+                <img class="logo" id="logo" src="<%= jsonData.sections.main.logo %>"/>
+            </div>
+            <div class="inline flex-grow">
+                <h1 id="name" class="black-text"><%= jsonData.sections.main.name %></h1>
+                <h2 id="mainInfo" class="black-text"><%= jsonData.sections.main.mainInfo %></h2>
+            </div>
+        </div>
+        <h3 id="info"><%= jsonData.sections.main.info %></h3>
+    </div>
+</section>
+<section id="resume">
+
+</section>
+<section id="qualities">
+
+</section>
+<section id="projects">
+
+</section>
 <%- include('../includes/footer.ejs') %>
