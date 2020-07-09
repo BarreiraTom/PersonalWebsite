@@ -60,6 +60,7 @@ h1{
     font-family: 'Barlow Semi Condensed';
     font-weight: 800;
     font-size: var(--h1Text-size);
+    line-height: var(--h1Text-size);
     margin: var(--normal-margin);
 }
 
