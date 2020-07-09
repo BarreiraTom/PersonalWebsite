@@ -1,6 +1,6 @@
 const sectionsTemp= document.getElementsByTagName('section');
-const sections = [...sectionsTemp];
+const sectionsSwitcher = [...sectionsTemp];
 
-sections.map(sect => {
+sectionsSwitcher.map(sect => {
     console.log(sect.id)
 });

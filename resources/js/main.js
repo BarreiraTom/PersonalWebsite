@@ -1,6 +1,6 @@
 let originalEvent;
 let eventTimeout;
-const sections= document.getElementsByTagName('section')
+const sectionsPage= [...document.getElementsByTagName('section')];
 
 window.addEventListener('mousewheel', (event)=> {
     //event.preventDefault();
@@ -8,17 +8,28 @@ window.addEventListener('mousewheel', (event)=> {
     if(!originalEvent){
         if (event.wheelDeltaY >= 0) {
             console.log('Scroll up');
-            var id = setInterval(frame, 2);
-            let pos=0;
-            function frame() {
-                if(pos<=window.innerHeight)
-                  pos++; 
-                  elem.style.top = pos + 'px'; 
-                  elem.style.left = pos + 'px'; 
-              }
+            if (sectionsPage[0].offsetTop<0) {
+                sectionsPage.forEach(sect=> {
+                    sect.style.top= `${sect.offsetTop + window.innerHeight}px`;
+                })
+            }
+            // var id = setInterval(frame, 2);
+            // let pos=0;
+            // function frame() {
+            //     if(pos<=window.innerHeight)
+            //       pos++; 
+            //       elem.style.top = pos + 'px'; 
+            //       elem.style.left = pos + 'px'; 
+            // }
         }
         else {
             console.log('Scroll down');
+            if (sectionsPage[sectionsPage.length-1].offsetTop>0) {
+                sectionsPage.forEach(sect=> {
+                    // debugger
+                    sect.style.top= `${sect.offsetTop - window.innerHeight}px`
+                })
+            }
         }
     }
     event.wheelDeltaY=0;
