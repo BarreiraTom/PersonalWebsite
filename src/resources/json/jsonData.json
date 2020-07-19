@@ -1,8 +1,9 @@
 {
   "websiteOwner": "Tomás Barreira",
-  "websiteTitle": "Resume & Info",
   "pages": {
     "/": {
+      "title": "Resume & Info",
+      "type":"info",
       "scrollable": false,
       "switcher": true,
       "transition": "scroll",
@@ -10,10 +11,10 @@
       "sections": {
         "main": {
           "title": "Infomation",
-          "logo": "/imgs/profile.jpg",
+          "logo": "/resources/imgs/profile.jpg",
           "name": "João Tomás Barreira",
           "mainInfo": "Bachelor's Degree in Computer Engineering",
-          "info": ""
+          "info": "teste"
         },
         "resume": {
           "title": "Resume"
@@ -27,6 +28,9 @@
           "title": "Projects"
         }
       }
+    },
+    "/about":{
+      "title":"ABOOT"
     }
   }
 }
