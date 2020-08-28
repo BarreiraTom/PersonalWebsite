@@ -122,3 +122,29 @@ h3{
 .flex-grow{
   flex-grow: 1;
 }
+
+/* ANIMATIONS */
+
+@keyframes slide-in-top {
+  0% {top: -50%; opacity: 0;}
+  50% {opacity: 0;}
+  100% {top: 50%; opacity: 1;}
+}
+
+@keyframes slide-in-bottom {
+  0% {top: 150%; opacity: 0;}
+  50% {opacity: 0;}
+  100% {top: 50%; opacity: 1;}
+}
+
+@keyframes slide-out-top {
+  0% {top: 50%; opacity: 1;}
+  50% {opacity: 0;}
+  100% {top: -50%; opacity: 0;}
+}
+
+@keyframes slide-out-bottom {
+  0% {top: 50%; opacity: 1;}
+  50% {opacity: 0;}
+  100% {top: 150%; opacity:0;}
+}

@@ -8,12 +8,13 @@
       "switcher": true,
       "transition": "scroll",
       "mainElement": "section",
+      "durantionAnim":750,
       "sections": {
         "main": {
           "title": "Infomation",
           "logo": "/resources/imgs/profile.jpg",
           "name": "João Tomás Barreira",
-          "mainInfo": "Bachelor's Degree in Computer Engineering",
+          "mainInfo": "Licentiate Degree in Computer Engineering",
           "info": "teste"
         },
         "resume": {
@@ -28,9 +29,6 @@
           "title": "Projects"
         }
       }
-    },
-    "/about":{
-      "title":"ABOOT"
     }
   }
 }

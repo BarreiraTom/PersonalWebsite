@@ -14,10 +14,11 @@ export default withRouter(function App() {
 
   let routes = (
     <>
-      {Object.entries(jsonData.pages).map((page) => {
+      {Object.entries(jsonData.pages).map((page,index) => {
         if (page[1].type == "info")
           return (
             <Route
+              key={index}
               path={page[0]}
               exact
               render={(props) => (
