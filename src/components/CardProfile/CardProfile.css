@@ -1,0 +1,58 @@
+#mainCard{
+    width: 80vw;
+    width: max-content;
+    height: 25vh;
+    padding: 0;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: gray 0 0 5px 1px; */
+    /* border-radius: 2rem; */
+}
+
+#leftSide{
+    margin: 0 2vw;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+#rightSide{
+    margin: 0;
+    height: 100%;
+    width: max-content;
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+#profileImg{
+    height: 100%;
+    width: fit-content;
+    margin: auto;
+    /* border-radius: 50%; */
+    /* border: gray 2px solid; */
+    overflow: hidden;
+}
+
+#profileImg img{
+    height: 100%;
+}
+
+#profileName{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 800;
+    font-size: 14vh;
+    line-height: 14vh;
+}
+
+#profileInfo{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 400;
+    font-size: 4vh;
+}
+#profileSecInfo{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 300;
+    font-size: 3vh;
+}

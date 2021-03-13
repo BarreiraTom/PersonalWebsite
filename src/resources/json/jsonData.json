@@ -1,0 +1,18 @@
+{
+  "websiteOwner": "Tomás Barreira",
+  "socialMedia": {
+    "getSrcs":[
+      "Twitter",
+      "Instagram",
+      "GitHub",
+      "Email"
+    ],
+    "Srcs":{
+      "Twitter": "barreira_tom",
+      "Instagram": "barreira.tom",
+      "Facebook": "tomasbarreira",
+      "GitHub": "BarreiraTom",
+      "Email": "tomas.barreira14@outlook.pt"
+    }
+  }
+}

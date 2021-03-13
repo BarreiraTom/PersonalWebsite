@@ -1,0 +1,21 @@
+{
+  "websiteOwner": "",
+  "mainInfo":"",
+  "secondaryInfo":"",
+  "aboutMe":"",
+  "socialMedia": {
+    "getSrcs":[
+      "Twitter",
+      "Instagram",
+      "GitHub",
+      "Email"
+    ],
+    "srcs":{
+      "Twitter": "",
+      "Instagram": "",
+      "Facebook": "",
+      "GitHub": "",
+      "Email": ""
+    }
+  }
+}
